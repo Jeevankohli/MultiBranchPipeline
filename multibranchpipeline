@@ -19,8 +19,4 @@ node('built-in')
         cicd.newDownload("FunctionalTesting.git")
         cicd.runSeleniumprograms("ScriptedPipelinewithsharedlibraries")
     }
-    stage('Delivery_master')
-    {
-       cicd.newDeploy("ScriptedPipelinewithsharedlibraries","172.31.82.42","prodapp") 
-    }
 }
